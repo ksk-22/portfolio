@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Korrapati Sai Kamal – AI & ML Engineering student passionate about building intelligent applications and solving real-world problems." />
+  <title>Korrapati Sai Kamal | AI & ML Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" id="nav-logo-link">KSK</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="#about" class="nav-link" id="nav-about">About</a></li>
+        <li><a href="#skills" class="nav-link" id="nav-skills">Skills</a></li>
+        <li><a href="#education" class="nav-link" id="nav-education">Education</a></li>
+        <li><a href="#experience" class="nav-link" id="nav-experience">Experience</a></li>
+        <li><a href="#projects" class="nav-link" id="nav-projects">Projects</a></li>
+        <li><a href="#certifications" class="nav-link" id="nav-certs">Certifications</a></li>
+        <li><a href="#contact" class="nav-link" id="nav-contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ── Hero ── -->
+  <section id="hero" class="hero" aria-label="Introduction">
+    <div class="hero-particles" id="hero-particles" aria-hidden="true"></div>
+    <div class="hero-content reveal">
+      <p class="hero-greeting">Hello, World! 👋</p>
+      <h1 class="hero-name">Korrapati<br /><span class="hero-name-accent">Sai Kamal</span></h1>
+      <div class="hero-role">
+        <span class="hero-role-static">I am a </span>
+        <span class="hero-role-typed" id="typed-text" aria-live="polite"></span>
+        <span class="hero-cursor" aria-hidden="true">|</span>
+      </div>
+      <p class="hero-bio">AI & ML Engineering student building intelligent applications and solving real-world problems through technology.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary" id="hero-view-work">View My Work</a>
+        <a href="#contact" class="btn btn-ghost" id="hero-contact">Get In Touch</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/ksk-22" target="_blank" rel="noopener noreferrer" class="social-link" id="hero-github" aria-label="GitHub profile">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/korrapati-sai-kamal-802280213/" target="_blank" rel="noopener noreferrer" class="social-link" id="hero-linkedin" aria-label="LinkedIn profile">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="mailto:kamalsai765@gmail.com" class="social-link" id="hero-email" aria-label="Send email">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 010 19.366V5.457c0-.913.741-1.636 1.636-1.636h.749L12 10.58l9.615-6.759h.749c.904 0 1.636.732 1.636 1.636z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator" aria-hidden="true">
+      <div class="scroll-mouse"><div class="scroll-dot"></div></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ── About ── -->
+  <section id="about" class="section" aria-label="About Me">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-avatar-wrap reveal">
+          <div class="about-avatar" id="about-avatar" aria-label="Profile avatar">
+            <div class="avatar-initials">KSK</div>
+            <div class="avatar-ring" aria-hidden="true"></div>
+          </div>
+          <div class="about-stats">
+            <div class="stat-card reveal" id="stat-cgpa">
+              <span class="stat-number">6.99</span>
+              <span class="stat-label">CGPA</span>
+            </div>
+            <div class="stat-card reveal" id="stat-certs">
+              <span class="stat-number">5</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-card reveal" id="stat-skills">
+              <span class="stat-number">15+</span>
+              <span class="stat-label">Tech Skills</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-content reveal">
+          <h3 class="about-heading">Motivated. Curious. Builder.</h3>
+          <p class="about-text">I'm a 3rd-year B.Tech student specializing in <strong>Artificial Intelligence & Machine Learning</strong> at R.M.D. Engineering College, Hyderabad. My journey in tech is driven by a deep curiosity about how machines can learn and make intelligent decisions.</p>
+          <p class="about-text">With a strong foundation in <strong>C, Java, Python, SQL</strong> and hands-on experience in web development and ML algorithms, I love bridging the gap between data-driven insights and real-world applications.</p>
+          <p class="about-text">I'm actively seeking internship opportunities where I can apply my skills, contribute to meaningful projects, and grow as a software developer.</p>
+          <div class="about-langs">
+            <span class="lang-tag">English</span>
+            <span class="lang-tag">Telugu</span>
+            <span class="lang-tag">Hindi</span>
+            <span class="lang-tag">Tamil (Basic)</span>
+          </div>
+          <div class="about-soft-skills">
+            <span class="soft-tag">Communication</span>
+            <span class="soft-tag">Teamwork</span>
+            <span class="soft-tag">Leadership</span>
+            <span class="soft-tag">Adaptability</span>
+            <span class="soft-tag">Quick Learner</span>
+            <span class="soft-tag">Time Management</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Skills ── -->
+  <section id="skills" class="section section-alt" aria-label="Technical Skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">Skills & Technologies</h2>
+      </div>
+      <div class="skills-categories">
+
+        <div class="skill-group reveal" id="skill-group-lang">
+          <h3 class="skill-group-title">
+            <span class="skill-group-icon" aria-hidden="true">💻</span> Programming Languages
+          </h3>
+          <div class="skill-pills">
+            <div class="skill-pill" id="skill-c"><span class="skill-icon">C</span> C</div>
+            <div class="skill-pill" id="skill-java"><span class="skill-icon">☕</span> Java</div>
+            <div class="skill-pill" id="skill-python"><span class="skill-icon">🐍</span> Python</div>
+            <div class="skill-pill" id="skill-sql"><span class="skill-icon">🗄</span> SQL</div>
+          </div>
+        </div>
+
+        <div class="skill-group reveal" id="skill-group-web">
+          <h3 class="skill-group-title">
+            <span class="skill-group-icon" aria-hidden="true">🌐</span> Web Development
+          </h3>
+          <div class="skill-pills">
+            <div class="skill-pill" id="skill-html">HTML</div>
+            <div class="skill-pill" id="skill-css">CSS</div>
+            <div class="skill-pill" id="skill-js">JavaScript</div>
+            <div class="skill-pill" id="skill-flask">🔥 Flask</div>
+          </div>
+        </div>
+
+        <div class="skill-group reveal" id="skill-group-ml">
+          <h3 class="skill-group-title">
+            <span class="skill-group-icon" aria-hidden="true">🤖</span> Machine Learning
+          </h3>
+          <div class="skill-pills">
+            <div class="skill-pill" id="skill-ann">Artificial Neural Networks</div>
+            <div class="skill-pill" id="skill-knn">KNN</div>
+            <div class="skill-pill" id="skill-dt">Decision Trees</div>
+            <div class="skill-pill" id="skill-kmeans">K-Means Clustering</div>
+            <div class="skill-pill" id="skill-preprocessing">Data Preprocessing</div>
+            <div class="skill-pill" id="skill-eval">Model Evaluation</div>
+          </div>
+        </div>
+
+        <div class="skill-group reveal" id="skill-group-tools">
+          <h3 class="skill-group-title">
+            <span class="skill-group-icon" aria-hidden="true">🛠</span> Tools & Core Skills
+          </h3>
+          <div class="skill-pills">
+            <div class="skill-pill" id="skill-git">Git</div>
+            <div class="skill-pill" id="skill-github">GitHub</div>
+            <div class="skill-pill" id="skill-msoffice">MS Office</div>
+            <div class="skill-pill" id="skill-dsa">DSA</div>
+            <div class="skill-pill" id="skill-oop">OOP</div>
+            <div class="skill-pill" id="skill-debug">Debugging</div>
+            <div class="skill-pill" id="skill-uiux">UI/UX Design</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Education ── -->
+  <section id="education" class="section" aria-label="Education">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">My Journey</span>
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div class="timeline" role="list">
+
+        <div class="timeline-item reveal" id="edu-btech" role="listitem">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">B.Tech — Artificial Intelligence & Machine Learning</h3>
+                <p class="timeline-org">R.M.D. Engineering College</p>
+              </div>
+              <span class="timeline-badge">Current</span>
+            </div>
+            <div class="timeline-meta">
+              <span class="timeline-period">📅 2024 – 2028</span>
+              <span class="timeline-grade">🎓 CGPA: 6.99</span>
+            </div>
+            <p class="timeline-desc">Pursuing specialization in AI & ML with coursework in machine learning algorithms, data structures, neural networks, database management, and full-stack development.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" id="edu-intermediate" role="listitem">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">Intermediate (MPC)</h3>
+                <p class="timeline-org">Board of Intermediate Education</p>
+              </div>
+            </div>
+            <div class="timeline-meta">
+              <span class="timeline-period">📅 2022 – 2024</span>
+              <span class="timeline-grade">📊 69%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" id="edu-school" role="listitem">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">Secondary School (SSC)</h3>
+                <p class="timeline-org">Board of Secondary Education</p>
+              </div>
+            </div>
+            <div class="timeline-meta">
+              <span class="timeline-period">📅 Completed 2022</span>
+              <span class="timeline-grade">📊 70%</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Experience ── -->
+  <section id="experience" class="section section-alt" aria-label="Experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Work Experience</span>
+        <h2 class="section-title">Experience</h2>
+      </div>
+      <div class="timeline" role="list">
+
+        <div class="timeline-item reveal" id="exp-prodigy" role="listitem">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">Machine Learning Intern</h3>
+                <p class="timeline-org">Prodigy InfoTech</p>
+              </div>
+              <span class="timeline-badge">Internship</span>
+            </div>
+            <div class="timeline-meta">
+              <span class="timeline-period">📅 1 Month · 2026</span>
+              <span class="timeline-grade">📍 Remote</span>
+              <span class="timeline-grade js-cert-card" data-cert-img="img/prodigy-internship.jpg" data-cert-title="Prodigy InfoTech Internship Completion" style="cursor: pointer; background: var(--accent-dim); color: var(--accent); border-color: var(--border-accent);">📜 View Certificate</span>
+            </div>
+            <p class="timeline-desc">Completed a hands-on Machine Learning internship at Prodigy InfoTech, working on real-world ML tasks spanning supervised learning, unsupervised clustering, computer vision, and deep learning. Built and evaluated 4 end-to-end ML models as part of the internship curriculum.</p>
+            <div class="exp-highlights">
+              <div class="exp-highlight-item">
+                <span class="exp-highlight-icon" aria-hidden="true">🏠</span>
+                <span>House Price Prediction using Linear Regression</span>
+              </div>
+              <div class="exp-highlight-item">
+                <span class="exp-highlight-icon" aria-hidden="true">🛒</span>
+                <span>Customer Segmentation using K-Means Clustering</span>
+              </div>
+              <div class="exp-highlight-item">
+                <span class="exp-highlight-icon" aria-hidden="true">🐱</span>
+                <span>Cat vs Dog Image Classifier using SVM &amp; HOG Features</span>
+              </div>
+              <div class="exp-highlight-item">
+                <span class="exp-highlight-icon" aria-hidden="true">🍔</span>
+                <span>Food Recognition &amp; Calorie Estimation using CNN</span>
+              </div>
+            </div>
+            <div class="exp-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">scikit-learn</span>
+              <span class="project-tag">Deep Learning</span>
+              <span class="project-tag">Computer Vision</span>
+              <span class="project-tag">Pandas</span>
+              <span class="project-tag">Matplotlib</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Projects ── -->
+  <section id="projects" class="section section-alt" aria-label="Projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What I've Built</span>
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1: Smart Medicine Reminder -->
+        <div class="project-card featured reveal" id="project-smr">
+          <div class="project-featured-badge" aria-label="Featured project">⭐ Featured</div>
+          <div class="project-top">
+            <div class="project-icon" aria-hidden="true">💊</div>
+            <div class="project-links">
+              <a href="https://github.com/ksk-22/SmartMedicineReminder" target="_blank" rel="noopener noreferrer" class="project-link-btn" id="smr-github-link" aria-label="View Smart Medicine Reminder on GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Smart Medicine Reminder</h3>
+          <p class="project-desc">A full-featured medicine reminder web application built with Zoho Catalyst. Helps users manage their medication schedules with timely notifications and an organized dashboard.</p>
+          <ul class="project-highlights" role="list">
+            <li>Medicine scheduling & automated reminder notifications</li>
+            <li>Responsive and user-friendly interface design</li>
+            <li>Organized dashboard for streamlined medicine management</li>
+          </ul>
+          <div class="project-tags" role="list">
+            <span class="project-tag" role="listitem">Zoho Catalyst</span>
+            <span class="project-tag" role="listitem">HTML</span>
+            <span class="project-tag" role="listitem">CSS</span>
+            <span class="project-tag" role="listitem">JavaScript</span>
+          </div>
+        </div>
+
+        <!-- Project 2: PRODIGY_ML_05 — Food Recognition -->
+        <div class="project-card reveal" id="project-ml05">
+          <div class="project-top">
+            <div class="project-icon" aria-hidden="true">🍔</div>
+            <div class="project-links">
+              <a href="https://github.com/ksk-22/PRODIGY_ML_05" target="_blank" rel="noopener noreferrer" class="project-link-btn" id="ml05-github-link" aria-label="View PRODIGY_ML_05 on GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Food Recognition & Calorie Estimation</h3>
+          <p class="project-desc">A deep learning model that identifies food items from images and estimates their calorie content — combining computer vision with nutritional intelligence.</p>
+          <ul class="project-highlights" role="list">
+            <li>CNN-based food image classification</li>
+            <li>Calorie estimation from recognized food items</li>
+            <li>Trained on real-world food image datasets</li>
+          </ul>
+          <div class="project-tags" role="list">
+            <span class="project-tag" role="listitem">Python</span>
+            <span class="project-tag" role="listitem">Deep Learning</span>
+            <span class="project-tag" role="listitem">CNN</span>
+            <span class="project-tag" role="listitem">Computer Vision</span>
+          </div>
+        </div>
+
+        <!-- Project 3: PRODIGY_ML_03 — SVM Image Classification -->
+        <div class="project-card reveal" id="project-ml03">
+          <div class="project-top">
+            <div class="project-icon" aria-hidden="true">🐱</div>
+            <div class="project-links">
+              <a href="https://github.com/ksk-22/PRODIGY_ML_03" target="_blank" rel="noopener noreferrer" class="project-link-btn" id="ml03-github-link" aria-label="View PRODIGY_ML_03 on GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Cat vs Dog Image Classifier (SVM)</h3>
+          <p class="project-desc">A Support Vector Machine model trained to classify images of cats and dogs. Explores feature extraction and binary classification with classical ML techniques.</p>
+          <ul class="project-highlights" role="list">
+            <li>SVM-based binary image classification</li>
+            <li>HOG feature extraction for image representation</li>
+            <li>Evaluated with precision, recall, and accuracy metrics</li>
+          </ul>
+          <div class="project-tags" role="list">
+            <span class="project-tag" role="listitem">Python</span>
+            <span class="project-tag" role="listitem">SVM</span>
+            <span class="project-tag" role="listitem">scikit-learn</span>
+            <span class="project-tag" role="listitem">HOG Features</span>
+          </div>
+        </div>
+
+        <!-- Project 4: PRODIGY_ML_02 — K-Means Clustering -->
+        <div class="project-card reveal" id="project-ml02">
+          <div class="project-top">
+            <div class="project-icon" aria-hidden="true">🛒</div>
+            <div class="project-links">
+              <a href="https://github.com/ksk-22/PRODIGY_ML_02" target="_blank" rel="noopener noreferrer" class="project-link-btn" id="ml02-github-link" aria-label="View PRODIGY_ML_02 on GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Customer Segmentation (K-Means)</h3>
+          <p class="project-desc">An unsupervised ML project that groups retail customers into distinct segments based on purchase history, enabling smarter marketing and personalized recommendations.</p>
+          <ul class="project-highlights" role="list">
+            <li>K-Means clustering on mall customer dataset</li>
+            <li>Elbow method for optimal cluster selection</li>
+            <li>2D visualization of customer segments</li>
+          </ul>
+          <div class="project-tags" role="list">
+            <span class="project-tag" role="listitem">Python</span>
+            <span class="project-tag" role="listitem">K-Means</span>
+            <span class="project-tag" role="listitem">Jupyter Notebook</span>
+            <span class="project-tag" role="listitem">Matplotlib</span>
+          </div>
+        </div>
+
+        <!-- Project 5: PRODIGY_ML_01 — House Price Prediction -->
+        <div class="project-card reveal" id="project-ml01">
+          <div class="project-top">
+            <div class="project-icon" aria-hidden="true">🏠</div>
+            <div class="project-links">
+              <a href="https://github.com/ksk-22/PRODIGY_ML_01" target="_blank" rel="noopener noreferrer" class="project-link-btn" id="ml01-github-link" aria-label="View PRODIGY_ML_01 on GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">House Price Prediction (Linear Regression)</h3>
+          <p class="project-desc">A linear regression model that predicts house prices based on square footage, number of bedrooms and bathrooms — a core supervised ML project with real-world data.</p>
+          <ul class="project-highlights" role="list">
+            <li>Linear regression on the Ames housing dataset</li>
+            <li>Feature engineering & data preprocessing pipeline</li>
+            <li>Model evaluation with RMSE and R² metrics</li>
+          </ul>
+          <div class="project-tags" role="list">
+            <span class="project-tag" role="listitem">Python</span>
+            <span class="project-tag" role="listitem">Linear Regression</span>
+            <span class="project-tag" role="listitem">scikit-learn</span>
+            <span class="project-tag" role="listitem">Pandas</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Certifications ── -->
+  <section id="certifications" class="section" aria-label="Certifications">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Credentials</span>
+        <h2 class="section-title">Certifications</h2>
+      </div>
+      <div class="certs-grid">
+
+        <div class="cert-card reveal js-cert-card" id="cert-oracle-ai-sql" data-cert-img="img/oracle-ai-sql.jpg" data-cert-title="Oracle AI Database SQL Certified Associate">
+          <div class="cert-icon" aria-hidden="true">🗄️</div>
+          <div class="cert-content">
+            <h3 class="cert-title">Oracle AI Database SQL Certified Associate</h3>
+            <span class="cert-issuer">Oracle</span>
+          </div>
+          <div class="cert-check" aria-label="Verified">✓</div>
+        </div>
+
+        <div class="cert-card reveal js-cert-card" id="cert-oracle-ai" data-cert-img="img/oracle-agentic-ai.jpg" data-cert-title="Oracle Agentic AI Foundations Associate">
+          <div class="cert-icon" aria-hidden="true">🏛</div>
+          <div class="cert-content">
+            <h3 class="cert-title">Oracle Agentic AI Foundations Associate</h3>
+            <span class="cert-issuer">Oracle</span>
+          </div>
+          <div class="cert-check" aria-label="Verified">✓</div>
+        </div>
+
+        <div class="cert-card reveal js-cert-card" id="cert-oracle-apex" data-cert-img="img/oracle-apex.jpg" data-cert-title="Oracle APEX Cloud Developer Certified Professional">
+          <div class="cert-icon" aria-hidden="true">⚡</div>
+          <div class="cert-content">
+            <h3 class="cert-title">Oracle APEX Cloud Developer</h3>
+            <span class="cert-issuer">Oracle</span>
+          </div>
+          <div class="cert-check" aria-label="Verified">✓</div>
+        </div>
+
+        <div class="cert-card reveal js-cert-card" id="cert-gen-ai" data-cert-img="img/oracle-gen-ai.jpg" data-cert-title="Oracle Cloud Infrastructure 2025 Certified Generative AI Professional">
+          <div class="cert-icon" aria-hidden="true">🤖</div>
+          <div class="cert-content">
+            <h3 class="cert-title">Generative AI</h3>
+            <span class="cert-issuer">Oracle</span>
+          </div>
+          <div class="cert-check" aria-label="Verified">✓</div>
+        </div>
+
+        <div class="cert-card reveal js-cert-card" id="cert-dbms" data-cert-img="img/nptel-dbms.jpg" data-cert-title="Data Base Management System">
+          <div class="cert-icon" aria-hidden="true">🗃</div>
+          <div class="cert-content">
+            <h3 class="cert-title">Data Base Management System</h3>
+            <span class="cert-issuer">NPTEL</span>
+          </div>
+          <div class="cert-check" aria-label="Verified">✓</div>
+        </div>
+
+        <div class="cert-card reveal js-cert-card" id="cert-iot" data-cert-img="img/nptel-iot.jpg" data-cert-title="Introduction to Industry 4.0 and Industrial Internet of Things">
+          <div class="cert-icon" aria-hidden="true">🌐</div>
+          <div class="cert-content">
+            <h3 class="cert-title">Introduction to Industry 4.0 and Industrial Internet of Things</h3>
+            <span class="cert-issuer">NPTEL</span>
+          </div>
+          <div class="cert-check" aria-label="Verified">✓</div>
+        </div>
+
+        <div class="cert-card reveal js-cert-card" id="cert-soft-skills" data-cert-img="img/nptel-soft-skills.jpg" data-cert-title="Soft Skill Development">
+          <div class="cert-icon" aria-hidden="true">🎯</div>
+          <div class="cert-content">
+            <h3 class="cert-title">Soft Skill Development</h3>
+            <span class="cert-issuer">NPTEL</span>
+          </div>
+          <div class="cert-check" aria-label="Verified">✓</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Contact ── -->
+  <section id="contact" class="section section-alt" aria-label="Contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Let's Talk</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">I'm currently open to internship opportunities and collaborations. Feel free to reach out!</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <a href="mailto:kamalsai765@gmail.com" class="contact-card" id="contact-email-card" aria-label="Email Korrapati Sai Kamal">
+            <div class="contact-card-icon" aria-hidden="true">✉️</div>
+            <div class="contact-card-text">
+              <span class="contact-card-label">Email</span>
+              <span class="contact-card-value">kamalsai765@gmail.com</span>
+            </div>
+            <div class="contact-card-arrow" aria-hidden="true">→</div>
+          </a>
+          <a href="tel:+916281684601" class="contact-card" id="contact-phone-card" aria-label="Call Korrapati Sai Kamal">
+            <div class="contact-card-icon" aria-hidden="true">📞</div>
+            <div class="contact-card-text">
+              <span class="contact-card-label">Phone</span>
+              <span class="contact-card-value">+91 6281684601</span>
+            </div>
+            <div class="contact-card-arrow" aria-hidden="true">→</div>
+          </a>
+          <a href="https://www.linkedin.com/in/korrapati-sai-kamal-802280213/" target="_blank" rel="noopener noreferrer" class="contact-card" id="contact-linkedin-card" aria-label="LinkedIn profile">
+            <div class="contact-card-icon" aria-hidden="true">💼</div>
+            <div class="contact-card-text">
+              <span class="contact-card-label">LinkedIn</span>
+              <span class="contact-card-value">korrapati-sai-kamal</span>
+            </div>
+            <div class="contact-card-arrow" aria-hidden="true">→</div>
+          </a>
+          <a href="https://github.com/ksk-22" target="_blank" rel="noopener noreferrer" class="contact-card" id="contact-github-card" aria-label="GitHub profile">
+            <div class="contact-card-icon" aria-hidden="true">⚙️</div>
+            <div class="contact-card-text">
+              <span class="contact-card-label">GitHub</span>
+              <span class="contact-card-value">ksk-22</span>
+            </div>
+            <div class="contact-card-arrow" aria-hidden="true">→</div>
+          </a>
+        </div>
+
+        <form class="contact-form reveal" id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="contact-name" class="form-label">Your Name</label>
+            <input type="text" id="contact-name" name="name" class="form-input" placeholder="John Doe" required autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label for="contact-email" class="form-label">Your Email</label>
+            <input type="email" id="contact-email" name="email" class="form-input" placeholder="john@example.com" required autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label for="contact-subject" class="form-label">Subject</label>
+            <input type="text" id="contact-subject" name="subject" class="form-input" placeholder="Internship Opportunity" required />
+          </div>
+          <div class="form-group">
+            <label for="contact-message" class="form-label">Message</label>
+            <textarea id="contact-message" name="message" class="form-textarea" placeholder="Tell me about the opportunity or project..." required rows="5"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="contact-submit">
+            <span class="btn-text">Send Message</span>
+            <span class="btn-icon" aria-hidden="true">→</span>
+          </button>
+          <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-text">Designed & Built by <strong>Korrapati Sai Kamal</strong></p>
+        <p class="footer-copy">© <span id="footer-year"></span> All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── Certificate Modal ── -->
+  <div id="cert-modal" class="modal" aria-hidden="true">
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close" aria-label="Close modal">&times;</button>
+      <img id="modal-image" src="" alt="Certificate" />
+      <div id="modal-caption" class="modal-caption"></div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
